@@ -23,3 +23,26 @@ export async function CreateAction({ request }) {
   // redirect back to the index page
   return redirect("/");
 }
+
+export async function UpdateAction({ request, params }) {
+    // get the form data
+    const formData = await request.formData();
+  
+    // construct new todo
+    const updatedSong = {
+      title: formData.get("title"),
+      artist: formData.get("artist"),
+    };
+  
+    // request to update route in backend
+    await fetch(url + params.id + "/", {
+      method: "put",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedSong),
+    });
+  
+    // redirect back to the index page
+    return redirect("/");
+  }
