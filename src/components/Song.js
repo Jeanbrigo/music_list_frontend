@@ -14,9 +14,9 @@ const Song = (props) => {
   return (
     <div style={div}>
       <Link to={`/song/${song.id}`}>
-        <h1>{song.title}</h1>
+        <h1>Song Title: {song.title}</h1>
       </Link>
-      <h2>{song.artist}</h2>
+      <h2>Artist: {song.artist}</h2>
     </div>
   );
 };
