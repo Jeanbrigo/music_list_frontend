@@ -32,6 +32,9 @@ const Show = (props) => {
           />
           <button>Update Song</button>
         </Form>
+        <Form action={`/delete/${song.id}`} method="post">
+            <button>Remove Song</button>
+        </Form>
       </div>
       <Link to="/">
         <button>Go Back</button>
