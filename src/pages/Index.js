@@ -1,5 +1,6 @@
 import { useLoaderData, Form } from "react-router-dom";
 import Song from "../components/Song";
+import Footer from "../components/Footer";
 
 
 const Index = (props) => {
@@ -7,14 +8,17 @@ const Index = (props) => {
 
   return <>
   <div style={{textAlign: "center"}}>
-      <h2>Add A Song Request</h2>
+      <h1>Add A Song Request:</h1>
       <Form action="/create" method="post">
-          <input type="text" name="title" placeholder="Song Title"/>
-          <input type="text" name="artist" placeholder="Artist"/>
+          <h1>Song Title:</h1>
+          <input type="text" name="title"/>
+          <h1>Artist:</h1>
+          <input type="text" name="artist"/>
           <button>Add</button>
       </Form>
   </div>
   {songs.map((song) => <Song key={song.id} song={song} />)}
+  <Footer/>
   </>;
 };
 

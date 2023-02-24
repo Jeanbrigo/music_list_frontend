@@ -1,15 +1,16 @@
 import { Link, useLoaderData, Form } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Show = (props) => {
   const song = useLoaderData();
 
   return (
     <div>
-      <h1>{song.title}</h1>
-      <h2>{song.artist}</h2>
+      <h1>Song Title: {song.title}</h1>
+      <h1>Artist: {song.artist}</h1>
       <div>
-        <h2>Update this song</h2>
-        <Form action={`/update/${song.id}`} method="post">
+        <h2>Update this song:</h2>
+        <Form id="updaterForm" action={`/update/${song.id}`} method="post">
           <input
             type="text"
             name="title"
@@ -24,13 +25,14 @@ const Show = (props) => {
           />
           <button>Update Song</button>
         </Form>
-        <Form action={`/delete/${song.id}`} method="post">
+        <Form class="deleter" action={`/delete/${song.id}`} method="post">
             <button>Remove Song</button>
         </Form>
       </div>
       <Link to="/">
         <button>Go Back</button>
       </Link>
+      <Footer/>
     </div>
   );
 };

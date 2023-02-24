@@ -1,25 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&family=Roboto:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+
 html {
-  background: linear-gradient( rgb(0, 0, 17), white);
+  background: linear-gradient( rgb(3, 3, 4), rgb(115,114, 143));
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   text-align: center;
   color: white;
-  font: Helvetica 400;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: white
+}
+
+button{
+  align-self: center;
+  border-radius: 15px;
+  width: 5em;
+  color: white;
+  background-color: black;
+  font-size:  2em;
+
+}
+
+.deleter{
+  width: fit-content;
+}
+
+h1{
+  padding: 0 10px;
 }
 
 .header {
-  font-family: Fira;
+  font-size: 5em;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footerLinks{
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  margin: 10px auto;
+  
+  width: 80%;
+  background: linear-gradient( rgb(139, 37, 31), rgb(106, 24, 14));
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+input{
+  width: 30em;
+  height: 4em;
+  align-self: center;
+  border-radius: 15px;
+
 }
 
 .song {
-  text-align: center;
-  border: .5px solid  black;
+  display: flex;
+  justify-content: space-between;
+  font: Helvetica 200;
+  border-radius: 15px;
   margin: 10px auto;
   width: 80%;
+  background: linear-gradient( rgb(37, 101, 185), rgb(27, 71, 143));
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 };
+
+
+#updaterForm {
+padding: 50px 0;
+}
