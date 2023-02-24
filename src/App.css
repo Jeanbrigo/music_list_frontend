@@ -78,3 +78,15 @@ input{
 #updaterForm {
 padding: 50px 0;
 }
+
+@media screen and (max-width < 480px) {
+  
+
+  input{
+    width: auto;
+    height: 4em;
+    align-self: center;
+    border-radius: 15px;
+  
+  }
+}
