@@ -79,8 +79,12 @@ input{
 padding: 50px 0;
 }
 
-@media screen and (max-width < 480px) {
+@media only screen and (max-width: 480px) {
   
+  form{
+    display: grid;
+    padding: 5px;
+  }
 
   input{
     width: auto;
