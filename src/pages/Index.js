@@ -9,7 +9,7 @@ const Index = (props) => {
   return <>
   <div style={{textAlign: "center"}}>
       <h1>Add A Song Request:</h1>
-      <Form action="/create" method="post">
+      <Form class="createForm" action="/create" method="post">
           <h1>Song Title:</h1>
           <input type="text" name="title"/>
           <h1>Artist:</h1>

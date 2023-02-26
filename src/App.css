@@ -80,6 +80,11 @@ input{
 padding: 50px 0;
 }
 
+.createForm{
+  justify-content: center;
+  -webkit-appearance: none;
+}
+
 @media only screen and (max-width: 480px) {
   
   form{
