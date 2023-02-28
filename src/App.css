@@ -2,8 +2,11 @@
 
 html {
   background: linear-gradient( rgb(3, 3, 4), rgb(115,114, 143));
-  background-repeat: no-repeat;
-  background-size: stretch;
+  background-position: 'center';
+  background-size: 'cover';
+  background-repeat: 'no-repeat';
+  width: '100vw';
+  height: '100vh'
 }
 
 body {
