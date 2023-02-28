@@ -6,7 +6,7 @@ const Show = (props) => {
 
   return (
     <div>
-      <h1>Song Title: {song.title}</h1>
+      <h1>Title: {song.title}</h1>
       <h1>Artist: {song.artist}</h1>
       <div>
         <h2>Update this song:</h2>
