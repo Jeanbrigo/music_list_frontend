@@ -3,7 +3,7 @@
 html {
   background: linear-gradient( rgb(3, 3, 4), rgb(115,114, 143));
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: stretch;
 }
 
 body {
