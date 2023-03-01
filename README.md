@@ -14,7 +14,7 @@ This is a CRUD application that allows for management of a performing DJ's song 
 
 ### Wireframe
 
-![Wireframe](https://i.imgur.com/DI0ZgAu.jpg)
+![Wireframe](https://i.imgur.com/mIVXiu6.png)
 
 
 ### Daily Plan
